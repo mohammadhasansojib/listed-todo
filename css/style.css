@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+main{
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    /* background-color: lightcoral; */
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+main button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0 5px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+main input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+main #input-and-btns{
+    background-color: rgba(89, 0, 255, 0.718);
+    padding: 20px;
+
+    display: flex;
+
+}
+main #input-and-btns input{
+    margin-right: auto;
+}
+main #item-field{
+    background-color: rgba(63, 98, 211, 0.32);
+    backdrop-filter: blur(50px);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 75vh;
+    overflow-y: auto;
+
+}
+main #item-field p{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ffffff30;
+}
+main #item-field p:last-child{
+    border-bottom: none;
+}
+main #item-field p label{
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 16px;
+}
+main #item-field p input{
+    margin-right: auto;
+    margin-left: 10px;
+}
+main #item-field p input[type = "checkbox"]{
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin: 0 5px;
+}
+
+#field-background{
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
+    background-color: rgb(136, 0, 255);
+    z-index: -5;
+    filter: blur(150px);
+}
+
+/* .btn{
+    padding: 5px;
+    line-height: 20px;
+} */
+
+
+
+@media only screen and (max-width: 540px){
+    main #input-and-btns{
+        background-color: rgba(89, 0, 255, 0.718);
+        padding: 20px;
+    
+        display: flex;
+        align-items: center;
+    }
+    main #input-and-btns input{
+        width: calc(100% - 160px);
+    }
+    main #input-and-btns button{
+        line-height: 25px;
+    }
+}
